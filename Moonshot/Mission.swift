@@ -17,4 +17,12 @@ struct Mission: Codable & Identifiable {
         let name: String?
         let role: String
     }
+    
+    var displayName: String {
+        "Apollo \(id)"
+    }
+    
+    var image: String {
+        "apollo\(id)"
+    }
 }
