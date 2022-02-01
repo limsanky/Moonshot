@@ -11,6 +11,11 @@
 		96DF71EE27A9418A0070FF9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF71ED27A9418A0070FF9F /* ContentView.swift */; };
 		96DF71F027A9418C0070FF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DF71EF27A9418C0070FF9F /* Assets.xcassets */; };
 		96DF71F327A9418C0070FF9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DF71F227A9418C0070FF9F /* Preview Assets.xcassets */; };
+		96DF71FA27A9481B0070FF9F /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF71F927A9481B0070FF9F /* Astronaut.swift */; };
+		96DF71FC27A9482C0070FF9F /* Bundle-Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF71FB27A9482C0070FF9F /* Bundle-Decoder.swift */; };
+		96DF720027A948530070FF9F /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 96DF71FE27A948530070FF9F /* missions.json */; };
+		96DF720127A948750070FF9F /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 96DF71FD27A948530070FF9F /* astronauts.json */; };
+		96DF720327A94AB10070FF9F /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF720227A94AB10070FF9F /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		96DF71ED27A9418A0070FF9F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		96DF71EF27A9418C0070FF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96DF71F227A9418C0070FF9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96DF71F927A9481B0070FF9F /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		96DF71FB27A9482C0070FF9F /* Bundle-Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decoder.swift"; sourceTree = "<group>"; };
+		96DF71FD27A948530070FF9F /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		96DF71FE27A948530070FF9F /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		96DF720227A94AB10070FF9F /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				96DF71EB27A9418A0070FF9F /* MoonshotApp.swift */,
 				96DF71ED27A9418A0070FF9F /* ContentView.swift */,
+				96DF720227A94AB10070FF9F /* Mission.swift */,
+				96DF71FB27A9482C0070FF9F /* Bundle-Decoder.swift */,
+				96DF71F927A9481B0070FF9F /* Astronaut.swift */,
+				96DF71FD27A948530070FF9F /* astronauts.json */,
+				96DF71FE27A948530070FF9F /* missions.json */,
 				96DF71EF27A9418C0070FF9F /* Assets.xcassets */,
 				96DF71F127A9418C0070FF9F /* Preview Content */,
 			);
@@ -126,7 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				96DF71F327A9418C0070FF9F /* Preview Assets.xcassets in Resources */,
+				96DF720027A948530070FF9F /* missions.json in Resources */,
 				96DF71F027A9418C0070FF9F /* Assets.xcassets in Resources */,
+				96DF720127A948750070FF9F /* astronauts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DF71FC27A9482C0070FF9F /* Bundle-Decoder.swift in Sources */,
+				96DF71FA27A9481B0070FF9F /* Astronaut.swift in Sources */,
 				96DF71EE27A9418A0070FF9F /* ContentView.swift in Sources */,
+				96DF720327A94AB10070FF9F /* Mission.swift in Sources */,
 				96DF71EC27A9418A0070FF9F /* MoonshotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
