@@ -14,7 +14,7 @@ struct Mission: Codable & Identifiable {
     let description: String
     
     struct CrewRole: Codable {
-        let name: String?
+        let name: String
         let role: String
     }
     
